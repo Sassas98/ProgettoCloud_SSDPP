@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nwxJYeUbmBGitRL54iRloC/lBs3bXLBfm6nJPGmZB6M0/sT4ExDpOA9kh1NYwpHXJFtj5VGKUwdh8cAT5Nrj1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}
