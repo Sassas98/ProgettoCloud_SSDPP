@@ -2,28 +2,23 @@
 
 <h1>@Model.localita</h1>
 
-@for(int i = 0; i < Model.giorni.Count(); i++) {
-	<div >
+@for (int i = 0; i < Model.giorni.Count(); i++) {
+	<div>
 		<p> @Model.giorni[i].giorno</p>
 		<img src="@Model.giorni[i].iconaUrl" />
 		<p>@Model.giorni[i].descIcona</p>
 		<p>@Model.giorni[i].testoGiorno</p>
 		<p>@Model.giorni[i].tMaxGiorno</p>
 		<p>@Model.giorni[i].tMinGiorno</p>
+		<form action="/Meteo/DelGiorno" method="get">
+			<input type="hidden" name="id" value="@Model.localita" />
+			<input type="hidden" name="gg" value="@i" />
+			<button type="submit">Meteo del Giorno</button>
+		</form>
 		<br />
 		<br />
 	</div>
 }
-
-<button onclick="goToHome()">Home</button>
-
-
-<script>
-	function goToHome() { 
-		window.location.href = "/"; 
-	}
-
-	function goToDay(string city, num gg) { 
-		window.location.href = "/Meteo/DelGiorno?id="+city+"&gg="+gg; 
-	}
-</script>
+<form action="/Meteo" method="get">
+	<button type="submit">Home</button>
+</form>
