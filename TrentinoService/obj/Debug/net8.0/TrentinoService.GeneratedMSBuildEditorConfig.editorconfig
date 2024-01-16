@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TrentinoService
-build_property.ProjectDir = C:\Users\15mim\OneDrive\Documenti\GitHub\ProgettoCloud_SSDPP\TrentinoService\
+build_property.ProjectDir = c:\Users\FEDERICO\OneDrive\Desktop\projects\C#\CloudProgetto\TrentinoService\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
