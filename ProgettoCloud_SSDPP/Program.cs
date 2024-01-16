@@ -1,5 +1,6 @@
 using ProgettoCloud_SSDPP.Services;
 using SoapCore;
+using static SoapCore.DocumentationWriter.SoapDefinition;
 
 namespace ProgettoCloud_SSDPP {
     public class Program {
@@ -8,6 +9,8 @@ namespace ProgettoCloud_SSDPP {
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSoapCore();
+            builder.Services.AddScoped<ITrentinoService, TrentinoService>();
 
             var app = builder.Build();
 
@@ -19,7 +22,7 @@ namespace ProgettoCloud_SSDPP {
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints => endpoints.UseSoapEndpoint<ISoapService>
+            app.UseEndpoints(endpoints => endpoints.UseSoapEndpoint<ITrentinoService>
                 ("/TrentinoService.wsdl", new SoapEncoderOptions(), SoapSerializer.XmlSerializer));
 
             app.UseAuthorization();

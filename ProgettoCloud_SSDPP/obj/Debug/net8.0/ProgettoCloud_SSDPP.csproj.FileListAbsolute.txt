@@ -90,3 +90,5 @@ C:\Users\Acer\Documents\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\obj\Debug
 C:\Users\Acer\Documents\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\obj\Debug\net8.0\ProgettoCloud_SSDPP.pdb
 C:\Users\Acer\Documents\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\obj\Debug\net8.0\ProgettoCloud_SSDPP.genruntimeconfig.cache
 C:\Users\Acer\Documents\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\obj\Debug\net8.0\ref\ProgettoCloud_SSDPP.dll
+C:\Users\15mim\OneDrive\Documenti\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\bin\Debug\net8.0\TrentinoService.dll
+C:\Users\15mim\OneDrive\Documenti\GitHub\ProgettoCloud_SSDPP\ProgettoCloud_SSDPP\bin\Debug\net8.0\TrentinoService.pdb

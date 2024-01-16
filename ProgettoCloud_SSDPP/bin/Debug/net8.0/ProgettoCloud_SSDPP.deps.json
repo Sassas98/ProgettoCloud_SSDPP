@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "ProgettoCloud_SSDPP/1.0.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5",
-          "SoapCore": "1.1.0.41"
+          "SoapCore": "1.1.0.41",
+          "TrentinoService": "1.0.0"
         },
         "runtime": {
           "ProgettoCloud_SSDPP.dll": {}
@@ -50,7 +50,6 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.5": {},
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
@@ -213,6 +212,14 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "TrentinoService/1.0.0": {
+        "dependencies": {
+          "SoapCore": "1.1.0.41"
+        },
+        "runtime": {
+          "TrentinoService.dll": {}
+        }
       }
     }
   },
@@ -270,13 +277,6 @@
       "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Kaa1rBZdJFq5A0qgAcl6Bmk/UqLXTq9acEqxUlPEBA8oscmakLfkvuSXfG7Wa9t1/keaT85EuuDNgOo+Z9VYOQ==",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.19.5",
-      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/4.7.0": {
       "type": "package",
@@ -417,6 +417,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "TrentinoService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

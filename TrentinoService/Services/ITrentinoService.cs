@@ -3,8 +3,8 @@ using System.ServiceModel;
 
 namespace ProgettoCloud_SSDPP.Services {
     [ServiceContract]
-    public interface ISoapService {
+    public interface ITrentinoService {
         [OperationContract]
-        public Task<Giorno?> GetMeteo(string comune, int distanzaGiorni);
+        public Task<Giorno?> GetMeteo(string comune, DateTime giorno);
     }
 }
