@@ -1,0 +1,66 @@
+﻿@model List<string>
+
+
+<div class="container">
+    <form asp-action="ProssimiGiorni" method="get">
+        <h1>Servizio meteo della regione del Trentino</h1>
+        <label for="options">Scegli un comune:</label>
+        <select name="id" id="options">
+            @foreach (var option in @Model) {
+                <option value="@option">@option</option>
+            }
+        </select>
+        <br /><br />
+        <input type="submit" value="Meteo">
+    </form>
+</div>
+
+<style>
+    body {
+        background-image: url('https://travelitalia.pl/wp-content/uploads/2021/03/the-embankment-in-the-centre-of-treviso-during-sunset-italy_Treviso-w-cieniu-Wenecji.-Co-zobaczyc-zwiedzanie-noclegi_shutterstock_1449256865-2048x1290.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(140%, 140%);
+
+	}
+
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        appearance: none;
+        background: url('dropdown-arrow.png') no-repeat right center;
+        background-color: #fff;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px;
+        width: 60%;
+        transform: translate(30%, 0%);
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        background-color: #43bdef;
+        cursor: pointer;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #436bff;
+        }
+
+        input[type="submit"]:active {
+            background-color: #436bff;
+            transform: translate(30%, 0%) scale(90%, 90%);
+        }
+</style>
