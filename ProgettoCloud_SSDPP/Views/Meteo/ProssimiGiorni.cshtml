@@ -3,7 +3,7 @@
 <h1>@Model.localita</h1>
 
 @for(int i = 0; i < Model.giorni.Count(); i++) {
-	<div>
+	<div >
 		<p> @Model.giorni[i].giorno</p>
 		<img src="@Model.giorni[i].iconaUrl" />
 		<p>@Model.giorni[i].descIcona</p>
@@ -15,11 +15,15 @@
 	</div>
 }
 
-<a href="/" type="button">Ritorna alla Home</a>
+<button onclick="goToHome()">Home</button>
 
-<div onclick="goToURL()" title="Clicca qui per andare su Bing">Clicca qui</div>
+
 <script>
-	function goToURL() { 
-		window.location.href = "https://www.bing.com"; 
+	function goToHome() { 
+		window.location.href = "/"; 
+	}
+
+	function goToDay(string city, num gg) { 
+		window.location.href = "/Meteo/DelGiorno?id="+city+"&gg="+gg; 
 	}
 </script>
