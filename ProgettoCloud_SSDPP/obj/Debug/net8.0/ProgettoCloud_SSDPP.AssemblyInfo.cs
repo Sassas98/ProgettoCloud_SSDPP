@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgettoCloud_SSDPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31f493594b23a9693ef8485a232bf6aadc2a86b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9d55ef5458571ea7addf5c590889f980dd31818")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgettoCloud_SSDPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgettoCloud_SSDPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

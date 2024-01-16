@@ -10,7 +10,7 @@
                 <option value="@option">@option</option>
             }
         </select>
-        <br>
+        <br /><br />
         <input type="submit" value="Meteo">
     </form>
 </div>
@@ -29,6 +29,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%) scale(140%, 140%);
+
 	}
 
     select {
@@ -45,7 +46,8 @@
     input[type="submit"] {
         margin-top: 20px;
         padding: 10px;
-        width: 100%;
+        width: 60%;
+        transform: translate(30%, 0%);
         border-radius: 10px;
         border: none;
         color: #fff;
@@ -53,7 +55,12 @@
         cursor: pointer;
     }
 
-    input[type="submit"]:hover {
+        input[type="submit"]:hover {
             background-color: #436bff;
-    }
+        }
+
+        input[type="submit"]:active {
+            background-color: #436bff;
+            transform: translate(30%, 0%) scale(90%, 90%);
+        }
 </style>

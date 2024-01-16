@@ -16,7 +16,7 @@ namespace ProgettoCloud_SSDPP.Controllers {
             var cities = await this._service.getCities();
             if(cities == null ) 
                 return RedirectToAction("Error");
-            return View(cities.Select(c => c.comune).Distinct().Order().ToList());
+            return View(cities.Select(c => c.localita).Order().ToList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -26,16 +26,12 @@ namespace ProgettoCloud_SSDPP.Controllers {
 
         public async Task<IActionResult> ProssimiGiorni(string id) {
             var previsione = await _service.getCity(id);
-            if(previsione == null)
-                previsione = await _service.getCity(id.Replace("'", ""));
             string jsonString = JsonSerializer.Serialize(previsione);
             return View(new Data(jsonString));
         }
 
         public async Task<IActionResult> DelGiorno(string id, int gg) {
             var giorno = await _service.GetMeteo(id, gg);
-            if (giorno == null)
-                giorno = await _service.GetMeteo(id.Replace("'", ""), gg);
             string jsonString = JsonSerializer.Serialize(giorno);
             return View(new Data(jsonString));
         }
