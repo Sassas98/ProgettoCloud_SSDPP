@@ -1,3 +1,6 @@
+using ProgettoCloud_SSDPP.Services;
+using SoapCore;
+
 namespace ProgettoCloud_SSDPP {
     public class Program {
         public static void Main(string[] args) {
@@ -16,11 +19,14 @@ namespace ProgettoCloud_SSDPP {
 
             app.UseRouting();
 
+            app.UseEndpoints(endpoints => endpoints.UseSoapEndpoint<ISoapService>
+                ("/TrentinoService.wsdl", new SoapEncoderOptions(), SoapSerializer.XmlSerializer));
+
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Meteo}/{action=Index}/{id?}/{gg?}");
 
             app.Run();
         }

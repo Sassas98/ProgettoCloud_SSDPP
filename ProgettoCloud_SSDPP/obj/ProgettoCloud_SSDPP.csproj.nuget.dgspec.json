@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj": {}
+    "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj": {
+    "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj",
+        "projectUniqueName": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj",
         "projectName": "ProgettoCloud_SSDPP",
-        "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\obj\\",
+        "projectPath": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP.csproj",
+        "packagesPath": "C:\\Users\\15mim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\ProgettoCloud_SSDPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\15mim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +48,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "SoapCore": {
+              "target": "Package",
+              "version": "[1.1.0.41, )"
             }
           },
           "imports": [
