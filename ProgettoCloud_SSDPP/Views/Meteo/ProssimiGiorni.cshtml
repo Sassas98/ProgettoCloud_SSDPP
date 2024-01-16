@@ -1,4 +1,25 @@
-﻿@model Data
+﻿@model ProgettoCloud_SSDPP.ViewModels.MeteoLocalitaViewModel
 
-<p>@Model.Var</p>
+<h1>@Model.localita</h1>
 
+@for(int i = 0; i < Model.giorni.Count(); i++) {
+	<div>
+		<p> @Model.giorni[i].giorno</p>
+		<img src="@Model.giorni[i].iconaUrl" />
+		<p>@Model.giorni[i].descIcona</p>
+		<p>@Model.giorni[i].testoGiorno</p>
+		<p>@Model.giorni[i].tMaxGiorno</p>
+		<p>@Model.giorni[i].tMinGiorno</p>
+		<br />
+		<br />
+	</div>
+}
+
+<a href="/" type="button">Ritorna alla Home</a>
+
+<div onclick="goToURL()" title="Clicca qui per andare su Bing">Clicca qui</div>
+<script>
+	function goToURL() { 
+		window.location.href = "https://www.bing.com"; 
+	}
+</script>

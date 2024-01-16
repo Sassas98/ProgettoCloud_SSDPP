@@ -1,9 +1,9 @@
 ﻿@model List<string>
 
 
-<div class="conteiner">
+<div class="container">
     <form asp-action="ProssimiGiorni" method="get">
-        <h1>Servizio meteo della regione di Treviso</h1>
+        <h1>Servizio meteo della regione del Trentino</h1>
         <label for="options">Scegli un comune:</label>
         <select name="id" id="options">
             @foreach (var option in @Model) {
@@ -24,7 +24,7 @@
         font-family: 'Arial', sans-serif;
     }
 
-    .conteiner {
+    .container {
         position: absolute;
         left: 50%;
         top: 50%;

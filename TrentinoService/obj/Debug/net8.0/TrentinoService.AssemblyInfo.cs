@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrentinoService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc52b8a480cde797d631bf0221723781ce30fb0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e05f45b1f5befcfca0eae920fead80595e31195")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrentinoService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrentinoService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
