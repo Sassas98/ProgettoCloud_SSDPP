@@ -1,24 +1,60 @@
 ﻿@model ProgettoCloud_SSDPP.ViewModels.MeteoLocalitaViewModel
 
-<h1>@Model.localita</h1>
 
-@for (int i = 0; i < Model.giorni.Count(); i++) {
-	<div>
-		<p> @Model.giorni[i].giorno</p>
-		<img src="@Model.giorni[i].iconaUrl" />
-		<p>@Model.giorni[i].descIcona</p>
-		<p>@Model.giorni[i].testoGiorno</p>
-		<p>@Model.giorni[i].tMaxGiorno</p>
-		<p>@Model.giorni[i].tMinGiorno</p>
-		<form action="/Meteo/DelGiorno" method="get">
-			<input type="hidden" name="id" value="@Model.localita" />
-			<input type="hidden" name="gg" value="@i" />
-			<button type="submit">Meteo del Giorno</button>
-		</form>
-		<br />
-		<br />
-	</div>
-}
-<form action="/Meteo" method="get">
-	<button type="submit">Home</button>
-</form>
+@Html.ActionLink("Home", "", "Meteo", null, new { @class = "button" })
+<h1 style="text-align:center">@Model.localita</h1>
+<div style="display:flex; flex-flow:wrap" width:100%>
+	@for (int i = 0; i < Model.giorni.Count(); i++) {
+		<div class="sfondo">
+			<p> @Model.giorni[i].giorno</p>
+			<img src="@Model.giorni[i].iconaUrl" />
+			<p>@Model.giorni[i].descIcona</p>
+			<p>@Model.giorni[i].testoGiorno</p>
+			<p>Max: @Model.giorni[i].tMaxGiorno °C - Min: @Model.giorni[i].tMinGiorno °C</p>
+			@Html.ActionLink("Meteo del Giorno", "DelGiorno", "Meteo", new { id = @Model.localita, gg = @i }, new { @class = "button" })
+			<br /><br />
+		</div>
+	}
+</div>
+
+<style>
+	body{
+		background-image: url('https://i.ibb.co/WPdMJdj/immagine-2024-01-17-010716193.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 10px 20px;
+		color: #FFFFFF;
+		background-color: #007BFF;
+		border: none;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		font-size: 16px;
+		transition-duration: 0.4s;
+		border-radius: 10px;
+	}
+
+	.button:hover {
+		background-color: #0046d5;
+	}
+
+	.button:active{
+		background-color: black;
+	}
+
+	.sfondo {
+		background-color: black;
+		opacity: 0.75;
+		border-color: black;
+		border: solid;
+		width: 49%;
+		align-items: center;
+		text-align: center;
+	}
+</style>

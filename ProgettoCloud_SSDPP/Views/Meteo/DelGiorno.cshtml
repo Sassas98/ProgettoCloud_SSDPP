@@ -1,4 +1,61 @@
-﻿@model Data
+﻿@model ProgettoCloud_SSDPP.ViewModels.MeteoDelGiornoViewModel
 
-<p>@Model.Var</p>
 
+@Html.ActionLink("Home", "", "Meteo", null, new { @class = "button" })
+@Html.ActionLink("Località", "ProssimiGiorni", "Meteo", new{ id = @Model.localita }, new { @class = "button" })
+<h1 style="text-align:center">@Model.localita - @Model.giorno</h1>
+<div style="display:flex; flex-flow:wrap" width:100%>
+	@foreach (var fascia in @Model.orari) {
+		<div class="sfondo">
+			<p> @fascia.fasciaPer @fascia.fasciaOre</p>
+			<img src="@fascia.icona" />
+			<p>@fascia.descIcona</p>
+			<p>Probabilità precipitazioni: @fascia.ProbabilitaPrecipitazioni </p>
+			<p>Intensità precipitazioni: @fascia.IntensitaPrecipitazioni </p>
+			<br />
+			<br />
+		</div>
+	}
+</div>
+
+<style>
+	body {
+		background-image: url('https://i.ibb.co/WPdMJdj/immagine-2024-01-17-010716193.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+	}
+	.button {
+		display: inline-block;
+		padding: 10px 20px;
+		color: #FFFFFF;
+		background-color: #007BFF;
+		border: none;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		font-size: 16px;
+		transition-duration: 0.4s;
+		border-radius: 10px;
+	}
+
+		.button:hover {
+			background-color: #0046d5;
+		}
+
+	a.button:active {
+		background-color: black;
+	}
+
+
+	.sfondo {
+		background-color: black;
+		opacity: 0.75;
+		border-color: black;
+		border:solid;
+		width: 49%;
+		align-items: center;
+		text-align: center;
+	}
+</style>

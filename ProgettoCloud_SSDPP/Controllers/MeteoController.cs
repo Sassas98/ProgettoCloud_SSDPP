@@ -4,6 +4,7 @@ using ProgettoCloud_SSDPP.Services;
 using ProgettoCloud_SSDPP.ViewModels;
 using System.Diagnostics;
 using System.Text.Json;
+using static ProgettoCloud_SSDPP.Services.TrentinoService;
 
 namespace ProgettoCloud_SSDPP.Controllers {
 	public class MeteoController : Controller {
@@ -46,8 +47,21 @@ namespace ProgettoCloud_SSDPP.Controllers {
 
         public async Task<IActionResult> DelGiorno(string id, int gg) {
             var giorno = await _service.GetMeteo(id, gg);
-            string jsonString = JsonSerializer.Serialize(giorno);
-            return View(new Data(jsonString));
+			var vm = new MeteoDelGiornoViewModel();
+            vm.localita = id;
+            var nums = giorno?.giorno.Split('-');
+            vm.giorno = nums[2] + '/' + nums[1] + '/' + nums[0];
+            vm.orari = giorno.fasce.Select(f => {
+                Models.Fascia fascia = new Fascia();
+                fascia.fasciaOre = f.fasciaOre;
+                fascia.fasciaPer = f.fasciaPer;
+                fascia.icona = f.icona;
+                fascia.descIcona = f.descIcona;
+                fascia.IntensitaPrecipitazioni = f.descPrecInten;
+                fascia.ProbabilitaPrecipitazioni = f.descPrecProb;
+                return fascia;
+            }).ToList();
+			return View(vm);
         }
 
     }
