@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTrentino", "MVCTrentino\MVCTrentino.csproj", "{EA4E53BE-66EF-457E-83D2-141A15BE22D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D88D5CBD-A27C-4360-9E5E-467250A4B7C4} = {D88D5CBD-A27C-4360-9E5E-467250A4B7C4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITrentino", "APITrentino\APITrentino.csproj", "{D88D5CBD-A27C-4360-9E5E-467250A4B7C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4E53BE-66EF-457E-83D2-141A15BE22D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4E53BE-66EF-457E-83D2-141A15BE22D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4E53BE-66EF-457E-83D2-141A15BE22D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4E53BE-66EF-457E-83D2-141A15BE22D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88D5CBD-A27C-4360-9E5E-467250A4B7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88D5CBD-A27C-4360-9E5E-467250A4B7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88D5CBD-A27C-4360-9E5E-467250A4B7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88D5CBD-A27C-4360-9E5E-467250A4B7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5D4507F-19C7-499B-A84B-8A8725BAFD76}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\bin\Release\net8.0\APITrentino.deps.json
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\bin\Release\net8.0\APITrentino.dll
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\bin\Release\net8.0\APITrentino.pdb
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.csproj.AssemblyReference.cache
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.AssemblyInfoInputs.cache
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.AssemblyInfo.cs
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.csproj.CoreCompileInputs.cache
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.dll
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\refint\APITrentino.dll
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\APITrentino.pdb
+C:\Users\15mim\source\repos\ProgettoCloud_SSDPP\APITrentino\obj\Release\net8.0\ref\APITrentino.dll
