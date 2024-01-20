@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj": {}
+    "C:\\Users\\Twinkal\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj": {}
   },
   "projects": {
-    "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj": {
+    "C:\\Users\\Twinkal\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj",
+        "projectUniqueName": "C:\\Users\\Twinkal\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj",
         "projectName": "APITrentino",
-        "projectPath": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj",
-        "packagesPath": "C:\\Users\\15mim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\15mim\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\obj\\",
+        "projectPath": "C:\\Users\\Twinkal\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\APITrentino.csproj",
+        "packagesPath": "C:\\Users\\Twinkal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Twinkal\\OneDrive\\Documenti\\GitHub\\ProgettoCloud_SSDPP\\APITrentino\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\15mim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Twinkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
